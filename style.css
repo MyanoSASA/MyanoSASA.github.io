@@ -83,6 +83,21 @@ section p1 {
 	transition: all .3s;
 
 }
+.Lbox{
+	display: inline-block;
+	width:100%;
+	height: 200px;
+	border: solid;
+	color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.484);
+	border-radius: 30px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+.Lbox:hover{
+	color: rgb(255, 196, 252);
+	border-radius: 25px;
+}
 
 .box .mask .stitle {
 	position: relative;
