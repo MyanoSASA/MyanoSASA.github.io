@@ -2,18 +2,23 @@ body {
     background-color: rgb(255, 255, 255);
     background-position: center;
     background-size: cover;
+    padding: 0% 10%;
 }
 
 main {
 
 
     color: #000000;
-    text-align: center;
     font-family: "M PLUS 1p";
-    padding: 0% 10%;
+
     animation-name: fadein;
     animation-duration: 0.5s;
     animation-fill-mode: both;
+    text-align: center;
+
+}
+main img{
+    width:100%;
 }
 
 .s1 {
@@ -137,7 +142,40 @@ section h2 {
 .charaexplain .mask .explaintext p {
     font-size: 50%;
 }
-
+@media screen and (max-width:600px) {
+    .diff {
+        position: relative;
+        z-index: 1;
+        width: 260px;
+        height: auto;
+    }
+    .d3 p{
+        color:#ffffff;
+    }
+    .charaexplain {
+        display: inline-block;
+        width: 100%;
+        height: 500px;
+        border: solid;
+        border-radius: 30px;
+        background-position: center;
+        background-image: url("original.png");
+        background-size:cover;
+    }
+    
+    .charaexplain .mask {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 500px;
+        border-radius: 25px;
+        background-color: #00000094;
+        opacity: 0;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    
+    }
+}
 
 @keyframes fadein {
     from {
