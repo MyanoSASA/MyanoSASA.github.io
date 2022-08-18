@@ -8,10 +8,8 @@
 	font-family: "M PLUS 1p";
 }
 
-
 header {
 	z-index: 10000;
-	color: #000000;
 	border-radius: 20px;
 }
 
@@ -106,21 +104,8 @@ section p1 {
 	transition: all .3s;
 
 }
-.Lbox{
-	display: inline-block;
-	width:100%;
-	height: 200px;
-	border: solid;
-	color: rgb(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.484);
-	border-radius: 30px;
-	-webkit-transition: all .3s;
-	transition: all .3s;
-}
-.Lbox:hover{
-	color: rgb(255, 196, 252);
-	border-radius: 25px;
-}
+
+
 
 .box .mask .stitle {
 	position: relative;
@@ -196,3 +181,30 @@ section p1 {
 		transform: translateY(0);
 	}
 }
+@media (prefers-color-scheme: dark) {
+	body{
+	  background-color: #000;
+	  color: #fff;
+	}
+	section h2 {
+		margin: auto;
+		border-bottom: 3px solid rgb(255, 233, 255);
+	
+	}
+	.box {
+		display: inline-block;
+		width: 200px;
+		height: 200px;
+		border: solid;
+		color: rgb(255, 255, 255);
+		border-radius: 30px;
+		-webkit-transition: all .3s;
+		transition: all .3s;
+	
+	}
+	.box:hover {
+		border-radius: 100px;
+		color: rgb(250, 233, 255);
+	
+	}
+  }
