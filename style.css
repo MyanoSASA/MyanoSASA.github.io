@@ -9,8 +9,14 @@
 }
 
 header {
+
 	z-index: 10000;
 	border-radius: 20px;
+	display: inline-block;
+	background: linear-gradient(125deg, rgb(255, 0, 179), rgb(64, 0, 255));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .missionhref {
@@ -100,6 +106,14 @@ section h2 {
 	margin: auto;
 	border-bottom: 3px solid rgb(255, 196, 252);
 
+}
+
+.h2text {
+	display: inline-block;
+	background: linear-gradient(125deg, rgb(255, 0, 179), rgb(38, 0, 152));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 section p1 {
@@ -226,19 +240,40 @@ section p1 {
 }
 
 @media (prefers-color-scheme: dark) {
+
 	body {
 		background-color: #000;
 		color: #fff;
+	}
+
+	header {
+		display: inline-block;
+		background: linear-gradient(125deg, rgb(255, 170, 230), rgb(153, 255, 252));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		z-index: 10000;
+		border-radius: 20px;
 	}
 
 	summary:hover {
 		cursor: pointer;
 		color: rgb(255, 195, 248);
 	}
+
 	section h2 {
+
 		margin: auto;
 		border-bottom: 3px solid rgb(255, 233, 255);
 
+	}
+
+	.h2text {
+		display: inline-block;
+		background: linear-gradient(125deg, rgb(255, 170, 230), rgb(153, 255, 252));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 
 	.box {
