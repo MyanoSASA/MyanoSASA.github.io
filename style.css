@@ -19,6 +19,19 @@ header {
 	-webkit-text-fill-color: transparent;
 }
 
+.lang {
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.lang:hover {
+	background: linear-gradient(125deg, rgb(64, 0, 255), rgb(255, 0, 179));
+	background-clip: text;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .missionhref {
 	-webkit-transition: all .3s;
 	transition: all .3s;
@@ -254,6 +267,14 @@ section p1 {
 		-webkit-text-fill-color: transparent;
 		z-index: 10000;
 		border-radius: 20px;
+	}
+
+	.lang:hover {
+		background: linear-gradient(125deg, rgb(153, 255, 252), rgb(255, 170, 230));
+		background-clip: text;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 
 	summary:hover {
