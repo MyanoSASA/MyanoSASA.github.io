@@ -212,8 +212,10 @@ section p1 {
 }
 
 .box4 {
-	background-image: url("Underconstruction.png");
+	background-image: url("Sasamipage.PNG");
 	background-size: cover;
+	background-position: center;
+	font-size: 82.5%;
 }
 
 .box5 {
