@@ -185,15 +185,6 @@ section p1 {
 
 }
 
-.box .Scrolled {
-	border-radius: 100px;
-	color: rgb(255, 196, 252);
-}
-
-.box .mask .Scrolled {
-	border-radius: 95px;
-	opacity: 0.75;
-}
 
 .box1 {
 	background-image: url("SASARACOS.png");
@@ -251,6 +242,17 @@ section p1 {
 
 	main {
 		padding-top: 10%;
+	}
+	.box .mask {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0.75;
+		border-radius: 30px;
+		background-color: black;
+		-webkit-transition: all .3s;
+		transition: all .3s;
 	}
 }
 
@@ -316,4 +318,5 @@ section p1 {
 		color: rgb(250, 233, 255);
 
 	}
+
 }
