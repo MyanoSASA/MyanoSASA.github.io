@@ -19,6 +19,10 @@ header {
 	-webkit-text-fill-color: transparent;
 }
 
+.box_i{
+	background-image: url(icon.png);
+	background-size: cover;
+}
 .lang {
 	-webkit-transition: all .3s;
 	transition: all .3s;
