@@ -92,9 +92,6 @@ summary:hover {
 	color: rgb(253, 163, 255);
 }
 
-details[open] .Selfintro {
-	animation: FadeDown 0.25s both;
-}
 
 
 img {
@@ -185,7 +182,10 @@ section p1 {
 
 }
 
-
+.box_i{
+	background-image: url(icon.png);
+	background-size: cover;
+}
 .box1 {
 	background-image: url("SASARACOS.png");
 	background-size: cover;
@@ -198,7 +198,7 @@ section p1 {
 }
 
 .box3 {
-	background-image: url("ToneStroll.png");
+	background-image: url("Underconstruction.png");
 	background-size: cover;
 }
 
