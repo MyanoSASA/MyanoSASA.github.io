@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sagan.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>SAGAN项目 - 人型机械开发</title>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/icon.png" alt="妙野先生 Logo" class="logo-img">
+                <span class="company-name">SAGAN项目</span>
+            </div>
+            <div class="nav-right">
+                <a href="index_zh.html" class="nav-link">首页</a>
+                <a href="sagan.html" class="nav-link lang-switch">日本語</a>
+                <a href="sagan_en.html" class="nav-link lang-switch">English</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="sagan-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">SAGAN项目</h1>
+            <p class="hero-subtitle">在Stormworks中开发的下一代人型机械系统</p>
+        </div>
+    </section>
+
+    <!-- Tab Navigation -->
+    <div class="tab-container">
+        <div class="container">
+            <div class="tab-nav">
+                <button class="tab-button active" data-tab="sagan">
+                    <i class="fas fa-robot"></i>
+                    <span>SAGAN</span>
+                </button>
+                <button class="tab-button" data-tab="saganplus">
+                    <i class="fas fa-rocket"></i>
+                    <span>SAGAN PLUS</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab Content -->
+    <main class="main-content">
+        <!-- SAGAN Tab -->
+        <div class="tab-content active" id="sagan">
+            <section class="section mech-section">
+                <div class="container">
+                    <h2 class="section-title">SAGAN - 量产型人型机械</h2>
+                    <div class="mech-content">
+                        <div class="mech-overview">
+                            <div class="mech-image-gallery">
+                                <div class="main-image">
+                                    <img src="images/sagan.jpg" alt="SAGAN主图" class="mech-main-img">
+                                </div>
+                                <div class="image-thumbnails">
+                                    <img src="images/sagan.jpg" alt="SAGAN 1" class="thumbnail active" data-main="images/sagan.jpg">
+                                    <img src="images/sagan2.jpg" alt="SAGAN 2" class="thumbnail" data-main="images/sagan2.jpg">
+                                    <img src="images/sagan3.jpg" alt="SAGAN 3" class="thumbnail" data-main="images/sagan3.jpg">
+                                </div>
+                            </div>
+                            
+                            <div class="mech-info">
+                                <div class="spec-card">
+                                    <h3><i class="fas fa-cogs"></i> 基本规格</h3>
+                                    <ul class="spec-list">
+                                        <li><strong>高度</strong>: 约17米</li>
+                                        <li><strong>分类</strong>: 量产型人型机械</li>
+                                        <li><strong>平台</strong>: Stormworks</li>
+                                        <li><strong>开发者</strong>: 妙野先生</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="feature-card">
+                                    <h3><i class="fas fa-star"></i> 主要特征</h3>
+                                    <div class="feature-grid">
+                                        <div class="feature-item">
+                                            <i class="fas fa-gamepad"></i>
+                                            <h4>控制辅助系统</h4>
+                                            <p>直升机级难度的操控</p>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-crosshairs"></i>
+                                            <h4>武器控制器</h4>
+                                            <p>清晰显示弹药和武器类型</p>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-hand-rock"></i>
+                                            <h4>手臂控制系统</h4>
+                                            <p>直观的执行器控制</p>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-puzzle-piece"></i>
+                                            <h4>可扩展性</h4>
+                                            <p>高度可扩展的结构设计</p>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-radar"></i>
+                                            <h4>传感器系统</h4>
+                                            <p>冗余传感器系统稳定性</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-details">
+                            <h3><i class="fas fa-wrench"></i> 技术详情</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <h4>控制系统</h4>
+                                    <p>先进的控制辅助系统将复杂的人型机械操作简化为直升机级别的难度。即使是初学者也能直观操作。</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h4>武器管理</h4>
+                                    <p>集成武器控制器提供弹药数量、类型和状态的集中管理。在战斗中能够快速评估战况。</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h4>执行器控制</h4>
+                                    <p>直观的手臂执行器控制系统支持从精密作业到战斗的广泛应用。具备简单的瞄准功能。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SAGAN PLUS Tab -->
+        <div class="tab-content" id="saganplus">
+            <section class="section mech-section">
+                <div class="container">
+                    <h2 class="section-title">SAGAN PLUS - 高性能人型机械</h2>
+                    <div class="mech-content">
+                        <div class="mech-overview">
+                            <div class="mech-image-gallery">
+                                <div class="main-image">
+                                    <img src="images/saganplus1.jpg" alt="SAGAN PLUS主图" class="mech-main-img">
+                                </div>
+                                <div class="image-thumbnails">
+                                    <img src="images/saganplus1.jpg" alt="SAGAN PLUS 1" class="thumbnail active" data-main="images/saganplus1.jpg">
+                                    <img src="images/saganplus2.jpg" alt="SAGAN PLUS 2" class="thumbnail" data-main="images/saganplus2.jpg">
+                                    <img src="images/saganplus3.jpg" alt="SAGAN PLUS 3" class="thumbnail" data-main="images/saganplus3.jpg">
+                                </div>
+                            </div>
+                            
+                            <div class="mech-info">
+                                <div class="spec-card plus-variant">
+                                    <h3><i class="fas fa-rocket"></i> 增强规格</h3>
+                                    <ul class="spec-list">
+                                        <li><strong>高度</strong>: 约17米</li>
+                                        <li><strong>分类</strong>: 高性能人型机械</li>
+                                        <li><strong>平台</strong>: Stormworks</li>
+                                        <li><strong>基础型号</strong>: SAGAN</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="feature-card plus-variant">
+                                    <h3><i class="fas fa-crown"></i> PLUS专属功能</h3>
+                                    <div class="feature-grid">
+                                        <div class="feature-item plus">
+                                            <i class="fas fa-rocket"></i>
+                                            <h4>高机动推进器</h4>
+                                            <p>大幅提升机动性</p>
+                                        </div>
+                                        <div class="feature-item plus">
+                                            <i class="fas fa-tv"></i>
+                                            <h4>高分辨率大显示器</h4>
+                                            <p>详细信息显示系统</p>
+                                        </div>
+                                        <div class="feature-item plus">
+                                            <i class="fas fa-brain"></i>
+                                            <h4>半自主系统</h4>
+                                            <p>无人攻击系统开发中</p>
+                                        </div>
+                                        <div class="feature-item plus">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>增强装甲</h4>
+                                            <p>优越的防御能力</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-details">
+                            <h3><i class="fas fa-microchip"></i> 先进技术</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <h4>高机动系统</h4>
+                                    <p>新型高机动推进器系统提供了远超传统机体的机动性能。确保在三维战斗中的优势地位。</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h4>信息集成系统</h4>
+                                    <p>通过高分辨率大显示器实现信息显示系统的集成化。从战场数据到机体状态的所有信息都集中管理。</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h4>半自主控制</h4>
+                                    <p>计划在未来集成半自主无人攻击系统。结合人类判断力和机械精度的下一代战斗系统。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="development-status">
+                            <h3><i class="fas fa-flask"></i> 开发状态</h3>
+                            <div class="status-grid">
+                                <div class="status-item completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>基础系统</span>
+                                </div>
+                                <div class="status-item completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>高机动推进器</span>
+                                </div>
+                                <div class="status-item completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>大型显示器</span>
+                                </div>
+                                <div class="status-item in-progress">
+                                    <i class="fas fa-cog fa-spin"></i>
+                                    <span>半自主系统</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/icon.png" alt="妙野先生 Logo" class="footer-logo-img">
+                        <span class="footer-company-name">SAGAN项目 by 妙野先生</span>
+                    </div>
+                    <p class="footer-copyright">&copy;2022 佐藤妙野. 保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/sagan.js"></script>
+</body>
+
+</html>

@@ -1,22 +1,263 @@
 <!DOCTYPE html>
-<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ja">
 
 <head>
-    <title>のっとふぁうんど</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="icon.png">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>404 - ページがないよ〜！ | みゃのさんのページ</title>
+    <style>
+        /* 404ページ専用スタイル */
+        .error-hero {
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+            min-height: calc(100vh - 70px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .error-hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
+            z-index: 1;
+        }
+
+        .error-hero-bg::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./hero_bgs/3.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .floating-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .particle {
+            position: absolute;
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.2);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .particle:nth-child(1) { top: 15%; left: 15%; animation-delay: 0s; }
+        .particle:nth-child(2) { top: 25%; right: 20%; animation-delay: 2s; }
+        .particle:nth-child(3) { bottom: 25%; left: 25%; animation-delay: 4s; }
+        .particle:nth-child(4) { bottom: 15%; right: 15%; animation-delay: 6s; }
+
+        .error-content {
+            max-width: 600px;
+            padding: 2rem;
+            z-index: 3;
+            position: relative;
+        }
+
+        .error-number {
+            font-size: 8rem;
+            font-weight: 700;
+            margin: 0 0 2rem 0;
+            animation: bounce 2s infinite;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+            background: linear-gradient(45deg, #fff, #e3f2fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .error-message {
+            font-size: 1.4rem;
+            margin: 2rem 0;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .error-btn {
+            padding: 1.2rem 2.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .error-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.2; }
+            25% { transform: translateY(-20px) rotate(5deg); opacity: 0.4; }
+            50% { transform: translateY(-10px) rotate(-5deg); opacity: 0.3; }
+            75% { transform: translateY(-15px) rotate(3deg); opacity: 0.5; }
+        }
+
+        @media (max-width: 768px) {
+            .error-number {
+                font-size: 5rem;
+            }
+            
+            .error-message {
+                font-size: 1.2rem;
+            }
+
+            .error-content {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .error-number {
+                font-size: 4rem;
+            }
+            
+            .error-message {
+                font-size: 1.1rem;
+            }
+
+            .particle {
+                font-size: 1rem;
+            }
+        }
+
+        .error-hero {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>404 Notfound</h1>
-    <section class="s1">
-        <h2>このページは存在しません</h2>
-        <p>たぶんURLが間違ってます</p>
-    </section>
-    <section class="s2">
-        <h2>「ささみのぺーじ」にもどりますか？</h2>
-        <p><a href="index.html">はい</a></p>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/icon.png" alt="みゃのさん Logo" class="logo-img">
+                <span class="company-name">みゃのさんのページ</span>
+            </div>
+            <div class="nav-right">
+                <a href="index_en.html" class="nav-link lang-switch">English</a>
+                <a href="index_zh.html" class="nav-link lang-switch">中文</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="error-hero">
+        <div class="error-hero-bg"></div>
+        
+        <!-- Floating Particles -->
+        <div class="floating-particles">
+            <i class="particle fas fa-robot"></i>
+            <i class="particle fas fa-rocket"></i>
+            <i class="particle fas fa-coffee"></i>
+            <i class="particle fas fa-heart"></i>
+        </div>
+
+        <div class="error-content">
+            <h1 class="error-number">404</h1>
+            <p class="error-message">ページが、どっかに....いきました.....<br>きっと宇宙の彼方に飛んでいったんだと思います</p>
+            
+            <a href="./index.html" class="error-btn">
+                <i class="fas fa-home"></i>
+                ホームに戻る
+            </a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // DOM読み込み完了後に実行
+        document.addEventListener('DOMContentLoaded', function() {
+
+            try {
+                const emojis = [ 'FOUR', '④', '₄', 'Ⅳ', '四'];
+                const errorNumber = document.querySelector('.error-number');
+                
+                if (errorNumber) {
+                    setInterval(() => {
+                        const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+                        errorNumber.textContent = `40${randomEmoji}`;
+                        setTimeout(() => {
+                            errorNumber.textContent = '404';
+                        }, 800);
+                    }, 8000);
+                }
+
+                // パーティクルにランダムな色を追加
+                const particles = document.querySelectorAll('.particle');
+                const colors = ['#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6'];
+                particles.forEach(particle => {
+                    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                    particle.style.color = randomColor;
+                });
+
+            } catch (error) {
+                console.log('JavaScript実行中にエラーが発生しましたが、ページは正常に動作します:', error);
+            }
+        });
+
+        // 背景のグラデーション変更
+        let gradientIndex = 0;
+        const gradients = [
+            'linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%)',
+            'linear-gradient(135deg, rgba(231, 76, 60, 0.8) 0%, rgba(142, 68, 173, 0.8) 100%)',
+            'linear-gradient(135deg, rgba(46, 204, 113, 0.8) 0%, rgba(52, 152, 219, 0.8) 100%)'
+        ];
+
+        setInterval(() => {
+            const heroBg = document.querySelector('.error-hero-bg');
+            if (heroBg) {
+                gradientIndex = (gradientIndex + 1) % gradients.length;
+                heroBg.style.background = gradients[gradientIndex];
+            }
+        }, 15000);
+    </script>
+</body>
 </html>

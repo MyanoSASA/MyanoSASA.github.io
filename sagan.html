@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sagan.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>SAGAN Project - 人型機開発プロジェクト</title>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/icon.png" alt="みゃのさん Logo" class="logo-img">
+                <span class="company-name">SAGAN Project</span>
+            </div>
+            <div class="nav-right">
+                <a href="index.html" class="nav-link">ホーム</a>
+                <a href="sagan_en.html" class="nav-link lang-switch">English</a>
+                <a href="sagan_zh.html" class="nav-link lang-switch">中文</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="sagan-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">SAGAN PROJECT</h1>
+            <p class="hero-subtitle">Stormworksで開発された次世代人型機システム</p>
+        </div>
+    </section>
+
+    <!-- Tab Navigation -->
+    <div class="tab-container">
+        <div class="container">
+            <div class="tab-nav">
+                <button class="tab-button active" data-tab="sagan">
+                    <i class="fas fa-robot"></i>
+                    <span>SAGAN</span>
+                </button>
+                <button class="tab-button" data-tab="saganplus">
+                    <i class="fas fa-rocket"></i>
+                    <span>SAGAN PLUS</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab Content -->
+    <main class="main-content">
+        <!-- SAGAN Tab -->
+        <div class="tab-content active" id="sagan">
+            <section class="section mech-section">
+                <div class="container">
+                    <h2 class="section-title">SAGAN - 量産型人型機</h2>
+                    <div class="mech-content">
+                        <div class="mech-overview">
+                            <div class="mech-image-gallery">
+                                <div class="main-image">
+                                    <img src="images/sagan.jpg" alt="SAGAN メイン画像" class="mech-main-img">
+                                </div>
+                                <div class="image-thumbnails">
+                                    <img src="images/sagan.jpg" alt="SAGAN 1" class="thumbnail active" data-main="images/sagan.jpg">
+                                    <img src="images/sagan2.jpg" alt="SAGAN 2" class="thumbnail" data-main="images/sagan2.jpg">
+                                    <img src="images/sagan3.jpg" alt="SAGAN 3" class="thumbnail" data-main="images/sagan3.jpg">
+                                </div>
+                            </div>
+                            
+                            <div class="mech-info">
+                                <div class="spec-card">
+                                    <h3><i class="fas fa-cogs"></i> 基本仕様</h3>
+                                    <ul class="spec-list">
+                                        <li><strong>全長</strong>: 約17m</li>
+                                        <li><strong>分類</strong>: 量産型人型機</li>
+                                        <li><strong>プラットフォーム</strong>: Stormworks</li>
+                                        <li><strong>開発者</strong>: Myano-san</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="feature-card">
+                                    <h3><i class="fas fa-star"></i> 主要特徴</h3>
+                                    <div class="feature-grid">
+                                        <div class="feature-item">
+                                            <i class="fas fa-gamepad"></i>
+                                            <h4>操縦補助システム</h4>
+                                            <p>ヘリ程度の難易度で操縦が可能</p>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-crosshairs"></i>
+                                            <h4>武装コントローラー</h4>
+                                            <p>残弾や武装種別が一目でわかる</p>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-hand-rock"></i>
+                                            <h4>腕部制御システム</h4>
+                                            <p>直感的なアクチュエーター制御</p>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-puzzle-piece"></i>
+                                            <h4>拡張性</h4>
+                                            <p>高い拡張性を持つ構造設計</p>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="fas fa-radar"></i>
+                                            <h4>センサーシステム</h4>
+                                            <p>冗長なセンサー系による安定性</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-details">
+                            <h3><i class="fas fa-wrench"></i> 技術詳細</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <h4>操縦システム</h4>
+                                    <p>高度な操縦補助システムにより、複雑な人型機の操縦をヘリコプター程度の難易度に簡略化。初心者でも直感的に操作することが可能です。</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h4>武装管理</h4>
+                                    <p>統合武装コントローラーにより、各種武装の残弾数、種類、状態を一元管理。戦闘中でも迅速な状況判断が可能です。</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h4>アクチュエーター制御</h4>
+                                    <p>腕部アクチュエーターの直感制御システムにより、精密な作業から戦闘まで幅広い用途に対応。照準合わせも簡単に行えます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SAGAN PLUS Tab -->
+        <div class="tab-content" id="saganplus">
+            <section class="section mech-section">
+                <div class="container">
+                    <h2 class="section-title">SAGAN PLUS - 高機能型人型機</h2>
+                    <div class="mech-content">
+                        <div class="mech-overview">
+                            <div class="mech-image-gallery">
+                                <div class="main-image">
+                                    <img src="images/saganplus1.jpg" alt="SAGAN PLUS メイン画像" class="mech-main-img">
+                                </div>
+                                <div class="image-thumbnails">
+                                    <img src="images/saganplus1.jpg" alt="SAGAN PLUS 1" class="thumbnail active" data-main="images/saganplus1.jpg">
+                                    <img src="images/saganplus2.jpg" alt="SAGAN PLUS 2" class="thumbnail" data-main="images/saganplus2.jpg">
+                                    <img src="images/saganplus3.jpg" alt="SAGAN PLUS 3" class="thumbnail" data-main="images/saganplus3.jpg">
+                                </div>
+                            </div>
+                            
+                            <div class="mech-info">
+                                <div class="spec-card plus-variant">
+                                    <h3><i class="fas fa-rocket"></i> 強化仕様</h3>
+                                    <ul class="spec-list">
+                                        <li><strong>全長</strong>: 約17m</li>
+                                        <li><strong>分類</strong>: 高機能型人型機</li>
+                                        <li><strong>プラットフォーム</strong>: Stormworks</li>
+                                        <li><strong>ベース機体</strong>: SAGAN</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="feature-card plus-variant">
+                                    <h3><i class="fas fa-crown"></i> PLUS専用機能</h3>
+                                    <div class="feature-grid">
+                                        <div class="feature-item plus">
+                                            <i class="fas fa-rocket"></i>
+                                            <h4>高機動スラスター</h4>
+                                            <p>大幅に向上した機動性能</p>
+                                        </div>
+                                        <div class="feature-item plus">
+                                            <i class="fas fa-tv"></i>
+                                            <h4>高精細大型モニター</h4>
+                                            <p>詳細な情報表示システム</p>
+                                        </div>
+                                        <div class="feature-item plus">
+                                            <i class="fas fa-brain"></i>
+                                            <h4>半自律システム</h4>
+                                            <p>開発中の無人攻撃機システム</p>
+                                        </div>
+                                        <div class="feature-item plus">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>強化装甲</h4>
+                                            <p>より高い防御性能</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-details">
+                            <h3><i class="fas fa-microchip"></i> 先進技術</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <h4>高機動システム</h4>
+                                    <p>新開発の高機動スラスターシステムにより、従来機を遥かに上回る機動性を実現。三次元戦闘における優位性を確保します。</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h4>情報統合システム</h4>
+                                    <p>高精細大型モニターによる統合情報表示システム。戦場情報から機体状態まで、あらゆる情報を一元化して表示します。</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h4>半自律制御</h4>
+                                    <p>開発中の半自律無人攻撃機システムを将来的に搭載予定。人間の判断と機械の精密性を融合した次世代戦闘システムです。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="development-status">
+                            <h3><i class="fas fa-flask"></i> 開発状況</h3>
+                            <div class="status-grid">
+                                <div class="status-item completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>基本システム</span>
+                                </div>
+                                <div class="status-item completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>高機動スラスター</span>
+                                </div>
+                                <div class="status-item completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>大型モニター</span>
+                                </div>
+                                <div class="status-item in-progress">
+                                    <i class="fas fa-cog fa-spin"></i>
+                                    <span>半自律システム</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/icon.png" alt="みゃのさん Logo" class="footer-logo-img">
+                        <span class="footer-company-name">SAGAN Project by Myano-san</span>
+                    </div>
+                    <p class="footer-copyright">&copy;2022 Sato Myano. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/sagan.js"></script>
+</body>
+
+</html>

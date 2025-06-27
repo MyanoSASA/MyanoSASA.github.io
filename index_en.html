@@ -1,104 +1,327 @@
 ﻿<!DOCTYPE html>
-
-<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="icon.png">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-    <title>Sasami's Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Myano-san - Super Creator Engineer Artist Video Creator</title>
 </head>
 
 <body>
-    <header>
-        <h1>Sasami's Website</h1>
-        <h3 class="lang"><a href="index.html">日本語</a></h3>
-    </header>
-    <main>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <section class="s1">
-            <h2>
-                <div class="h2text">Who is Sasami(ささみ)？</div>
-            </h2>
-            <p>Me.I'll make someone's fun with my contents.
-                <br>
-            </p>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/icon.png" alt="Myano-san Logo" class="logo-img">
+                <span class="company-name">Myano-san's Page</span>
+            </div>
+            <div class="nav-right">
+                <a href="index.html" class="nav-link lang-switch">日本語</a>
+                <a href="index_zh.html" class="nav-link lang-switch">中文</a>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Fun!! Interesting!! Amazing!!</h1>
+            <p class="hero-subtitle">Full-stack development and AI technology to quickly turn ideas into reality</p>
+        </div>
         </section>
-        <section class="s2">
-            <h2>
-                <div class="h2text">Mission</div>
-            </h2>
-            <p>Produce something interesting.<br>
-            </p>
-        </section>
-        <section class="s3">
-            <a name="creation">
-                <h2>
-                    <div class="h2text">Creation</div>
-                </h2>
-            </a>
-            <p>My projects.
-            </p>
-            <div class="boxes">
-                <a href="https://github.com/MyanoSASA/SASARACOSPRE/blob/main/README.md" class="box box1">
-                    <div class="mask">
-                        <div class="stitle">SASARACOS<p class="stitle2">Railway controll system for Stormworks</p>
+
+    <!-- Tab Navigation -->
+    <div class="tab-container">
+        <div class="container">
+            <div class="tab-nav">
+                <button class="tab-button active" data-tab="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </button>
+                <button class="tab-button" data-tab="mission">
+                    <i class="fas fa-bullseye"></i>
+                    <span>Mission</span>
+                </button>
+                <button class="tab-button" data-tab="services">
+                    <i class="fas fa-cogs"></i>
+                    <span>Creation</span>
+                </button>
+                <button class="tab-button" data-tab="contact">
+                    <i class="fas fa-link"></i>
+                    <span>Links</span>
+                </button>
+                <button class="tab-button" data-tab="partners">
+                    <i class="fas fa-handshake"></i>
+                    <span>Partners</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab Content -->
+    <main class="main-content">
+        <!-- About Tab -->
+        <div class="tab-content active" id="about">
+            <section class="section about-section">
+                <div class="container">
+                    <h2 class="section-title">Who is Myano-san?</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p class="intro-text">Me. I'll make someone's fun with my contents.</p>
+                            
+                            <div class="about-summary">
+                                <div class="summary-grid">
+                                    <div class="summary-item">
+                                        <i class="fas fa-laptop-code"></i>
+                                        <h4>Frontend Development</h4>
+                                        <p>HTML/CSS/JavaScript</p>
+                                    </div>
+                                    <div class="summary-item">
+                                        <i class="fas fa-server"></i>
+                                        <h4>Backend Development</h4>
+                                        <p>Node.js・Firebase・AWS</p>
+                                    </div>
+                                    <div class="summary-item">
+                                        <i class="fas fa-robot"></i>
+                                        <h4>AI・LLM Integration</h4>
+                                        <p>Cutting-edge tech integration</p>
+                                    </div>
+                                    <div class="summary-item">
+                                        <i class="fas fa-video"></i>
+                                        <h4>Video Editing</h4>
+                                        <p>Content creation & editing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <details class="details-container">
+                                <summary class="details-summary">Detailed Profile</summary>
+                                <div class="details-content">
+                                    <div class="profile-detailed">
+                                        <div class="profile-section">
+                                            <div class="profile-main">
+                                                <div class="profile-image"></div>
+                                                <div class="profile-info">
+                                                    <h3 class="profile-name">Myano-san</h3>
+                                                    <p class="profile-role">Super Creator Engineer Artist Video Creator</p>
+                                                    <p class="profile-description">An engineer who loves cutting-edge technology and delicious food.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="profile-details">
+                                            <div class="detail-row">
+                                                <h4><i class="fas fa-laptop-code"></i> Technical Skills</h4>
+                                                <ul>
+                                                    <li>Frontend - HTML/CSS/JavaScript</li>
+                                                    <li>Backend - Node.js, Firebase, AWS</li>
+                                                    <li>AI・LLM - Cutting-edge AI technology integration</li>
+                                                    <li>Video Editing - Content creation & editing techniques</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="detail-row">
+                                                <h4><i class="fas fa-heart"></i> Interests & Hobbies</h4>
+                                                <ul>
+                                                    <li>🍽️ Delicious food - Gourmet exploration</li>
+                                                    <li>☕ Cocoa - Relaxing with warm beverages</li>
+                                                    <li>🚀 Latest technology - AI, ML, Web tech trends</li>
+                                                    <li>🚄 Vehicles - Railways, aircraft, spacecraft</li>
+                                                    <li>🌌 Space - Space development & astronomy</li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="detail-row">
+                                                <h4><i class="fas fa-trophy"></i> Achievements & Experience</h4>
+                                                <ul>
+                                                    <li>Full-stack web application development</li>
+                                                    <li>AI・LLM integration system development</li>
+                                                    <li>Cloud infrastructure design & operation (AWS・Firebase)</li>
+                                                    <li>Video content creation & editing</li>
+                                                    <li>Prototype development using latest technologies</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </details>
                         </div>
                     </div>
-                </a>
-                <a href="https://www.nicovideo.jp/series/265211" class="box box2">
-                    <div class="mask">
-                        <div class="stitle">GENIUS<p class="stitle2">Stormworks gameplay video.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Mission Tab -->
+        <div class="tab-content" id="mission">
+            <section class="section mission-section">
+                <div class="container">
+                    <h2 class="section-title">Mission</h2>
+                    <div class="mission-content">
+                        <div class="mission-main">
+                            <p class="mission-text">Turn ideas into reality with speed and passion</p>
+                            <p class="mission-subtitle">Start moving first, then improve - rather than aiming for perfection</p>
+                        </div>
+                        
+                        <div class="mission-details">
+                            <div class="mission-pillars">
+                                <div class="pillar">
+                                    <div class="pillar-icon">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <h3>Speed</h3>
+                                    <h4>Immediate prototyping when inspiration strikes</h4>
+                                    <p>Start taking action the moment an idea comes to mind. Rather than spending time thinking, we prioritize moving our hands and giving shape to concepts.</p>
+                                </div>
+                                
+                                <div class="pillar">
+                                    <div class="pillar-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <h3>Joy</h3>
+                                    <h4>When it works, we're happy! Then let's make it even better!</h4>
+                                    <p>We cherish the joy of the moment when something starts working, and use that excitement as energy to continue creating even better things.</p>
+                                </div>
+                                
+                                <div class="pillar">
+                                    <div class="pillar-icon">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <h3>Action</h3>
+                                    <h4>A working 80 is better than a perfect 100 that doesn't work</h4>
+                                    <p>Rather than producing nothing while pursuing perfection, we choose to create something that actually works at 80% completion, then improve from there.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mission-vision">
+                            <div class="vision-item">
+                                <h3><i class="fas fa-eye"></i> Vision</h3>
+                                <p>To become a developer who continuously creates valuable things through the shortest path from idea to implementation</p>
+                            </div>
+                            
+                            <div class="vision-item">
+                                <h3><i class="fas fa-bullseye"></i> Values</h3>
+                                <ul>
+                                    <li><strong>Speed</strong> - Quickly shape ideas into reality</li>
+                                    <li><strong>Execution</strong> - Move hands before thinking</li>
+                                    <li><strong>Improvement</strong> - Make the next version better once it works</li>
+                                    <li><strong>Practicality</strong> - Value practical over perfect</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </a>
-                <a href="" class="box box3">
-                    <div class="mask">
-                        <div class="stitle">Upcoming<p class="stitle2">Underconstruction...<br>maybe?</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Services Tab -->
+        <div class="tab-content" id="services">
+            <section class="section services-section">
+                <div class="container">
+                    <h2 class="section-title">Creation</h2>
+                    <p class="section-description">My projects and works in development.</p>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-image sasaracos-bg"></div>
+                            <div class="service-content">
+                                <h3 class="service-title">SASARACOS</h3>
+                                <p class="service-description">Railway control system for Stormworks</p>
+                                <a href="https://github.com/MyanoSASA/SASARACOSPRE/blob/main/README.md" class="service-link" target="_blank">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-image genius-bg"></div>
+                            <div class="service-content">
+                                <h3 class="service-title">GENIUS</h3>
+                                <p class="service-description">Stormworks gameplay video series</p>
+                                <a href="https://www.nicovideo.jp/series/265211" class="service-link" target="_blank">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-image sagan-bg"></div>
+                            <div class="service-content">
+                                <h3 class="service-title">SAGAN Humanoid Mech Project</h3>
+                                <p class="service-description">Next-generation humanoid mech system developed in Stormworks. Features mass production SAGAN and high-performance SAGAN PLUS</p>
+                                <a href="sagan_en.html" class="service-link">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-image website-bg"></div>
+                            <div class="service-content">
+                                <h3 class="service-title">Sasami's Website</h3>
+                                <p class="service-description">What you see now.<br>Great learning experience for HTML and CSS.</p>
+                                <a href="https://github.com/MyanoSASA/MyanoSASA.github.io" class="service-link" target="_blank">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-image coming-soon-bg"></div>
+                            <div class="service-content">
+                                <h3 class="service-title">Upcoming...</h3>
+                                <p class="service-description">Under construction...<br>maybe?</p>
+                                <span class="service-link disabled">Coming Soon</span>
+                    </div>
                         </div>
                     </div>
-                </a>
-                <a href="https://github.com/MyanoSASA/MyanoSASA.github.io" class="box box4">
-                    <div class="mask">
-                        <div class="stitle">Sasami's Website<p class="stitle2">What you see now.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Tab -->
+        <div class="tab-content" id="contact">
+            <section class="section links-section">
+                <div class="container">
+                    <h2 class="section-title">Links & Contact</h2>
+                    <p class="section-description">Links about me.</p>
+                    <div class="links-content">
+                        <div class="embed-container">
+                            <iframe width="320" height="160" src="https://ext.nicovideo.jp/thumb_user/118815892" 
+                                    scrolling="no" style="border:solid 1px #CCC;" frameborder="0">SasaTech</iframe>
                         </div>
                     </div>
-                </a>
-                <a href="" class="box box5">
-                    <div class="mask">
-                        <div class="stitle">Upcoming<p class="stitle2">Underconstruction...<br>maybe?</p>
-                        </div>
-                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Partners Tab -->
+        <div class="tab-content" id="partners">
+            <section class="section partners-section">
+                <div class="container">
+                    <h2 class="section-title">Partners</h2>
+                    <p class="section-description">Mutual links and friends</p>
+                    <div class="partners-content">
+                        <a href="https://nona-takahara.github.io/" class="partner-link" target="_blank">
+                            <img src="https://nona-takahara.github.io/image/banner_234x60.png" alt="Partner" class="partner-logo">
                 </a>
             </div>
-            　
+                </div>
         </section>
-        <section class="s4">
-
-            <h2>
-                <div class="h2text">Links</div>
-            </h2>
-
-            <p>Links about me.</p>
-
-            <p><iframe width="320" height="160" src="https://ext.nicovideo.jp/thumb_user/118815892" scrolling="no"
-                    style="border:solid 1px #CCC;" frameborder="0">ささてっく</iframe>
-            </p>
-
-
-        </section>
-        <section class="s5">
-            <h2>
-                <div class="h2text">Nakama</div>
-            </h2>
-            <a href="https://nona-takahara.github.io/"><img
-                    src="https://nona-takahara.github.io/image/banner_234x60.png"></a>
+        </div>
     </main>
-    <footer>
-        &copy;2022 Sato Myano
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/icon.png" alt="Myano-san Logo" class="footer-logo-img">
+                        <span class="footer-company-name">Super Creator Engineer Artist Video Creator</span>
+                    </div>
+                    <p class="footer-copyright">&copy;2022 Sato Myano. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
