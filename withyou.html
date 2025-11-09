@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/withyou.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>With You - AIキャラクター対話・生成ソフトウェア</title>
+</head>
+
+<body>
+    <!-- ナビゲーション -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/icon.png" alt="みゃのさん Logo" class="logo-img">
+                <span class="company-name">With You</span>
+            </div>
+            <div class="nav-right">
+                <a href="withyou_en.html" class="nav-link lang-switch">English</a>
+                <a href="withyou_zh.html" class="nav-link lang-switch">中文</a>
+                <a href="index.html#services" class="nav-link">Creationへ戻る</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーロー -->
+    <section class="withyou-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">AIキャラクターと<span>「過ごす」</span>ためのデスクトップソフト</h1>
+                <p class="hero-subtitle">音声認識・LLM・3DCG・音声合成を束ね、キャラクターが目の前にいるような対話体験を実現します。</p>
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>リアルタイム割り込み会話</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>動的キャラクター生成</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-sitemap"></i>
+                        <span>統合設計</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- 概要 -->
+        <section class="section overview-section">
+            <div class="container overview-grid">
+                <div class="overview-content">
+                    <h2 class="section-title">ソフトウェア概要</h2>
+                    <p>「With You」はAIキャラクターと自然なテンポで会話できるデスクトップアプリです。単なるAIチャットではなく、キャラクターが「そこにいる」と感じられる没入感を大切にし、言語処理・3Dモデル・音声合成・UIを密に連携させています。</p>
+                    <p>最新バージョンではユーザーの要望に応じてキャラクターの個性・外見・声を即時生成できるようになり、単一キャラクターの運用から「無数の人格を生み出す」プラットフォームへと進化しました。</p>
+                </div>
+                <div class="overview-cards">
+                    <article class="info-card">
+                        <h3><i class="fas fa-road"></i> 開発の背景</h3>
+                        <p>「AIと雑談する」の先にある、「AIと過ごす」体験を形にするため、即応性・拡張性・個性表現を両立する汎用対話基盤として設計しました。</p>
+                    </article>
+                    <article class="info-card">
+                        <h3><i class="fas fa-layer-group"></i> コアバリュー</h3>
+                        <ul>
+                            <li>レスポンスの速さと深い表現力の両立</li>
+                            <li>割り込み可能な双方向会話</li>
+                            <li>キャラクターの動的生成と永続化</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+            <div class="container overview-media">
+                <figure class="section-image overview-image">
+                    <img src="images/withyou-dashboard.png" alt="With Youのダッシュボード画面">
+                    <figcaption>ホームダッシュボードではキャラクター状態や会話履歴を一望できます。</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 主な機能 -->
+        <section class="section features-section">
+            <div class="container">
+                <h2 class="section-title">主要機能</h2>
+                <p class="section-description">最新版の「With You」が提供する体験とテクノロジーです。</p>
+                <figure class="section-image features-image">
+                    <img src="images/withyou-character-setup.png" alt="With Youのキャラクター生成UI">
+                    <figcaption>キャラクター生成画面：自然文入力から人格・外見設定を自動生成します。</figcaption>
+                </figure>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-microphone-alt"></i>
+                        <h3>音声入力リアルタイム会話</h3>
+                        <p>常時リッスンでAI発話中でも割り込み可能。自然なテンポでの雑談や相槌が可能です。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>LLM連携とJSON制御</h3>
+                        <p>OpenAIのChat Completions APIを活用。出力はJSONスキーマを厳守し、会話データや設定を構造化します。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-wave-square"></i>
+                        <h3>VOICEVOXによる逐次音声合成</h3>
+                        <p>ローカルHTTP APIを用いた逐次合成で発話開始までのラグを最小化。高品質な音声体験を実現します。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-user-edit"></i>
+                        <h3>キャラクター動的生成</h3>
+                        <p>自然文の指示から口調・設定・外見・声をまとめたJSONを生成し、そのまま人格として起動します。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>外見カスタマイズ</h3>
+                        <p>髪色・瞳色・VRMモデルをマテリアル操作で動的に変更。調和する配色を自動補正します。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-save"></i>
+                        <h3>永続化と再現</h3>
+                        <p>PlayerPrefsに生成結果を保存し、再起動後も同じ人格・設定で会話を継続できます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アーキテクチャ -->
+        <section class="section architecture-section">
+            <div class="container">
+                <h2 class="section-title">構成アーキテクチャ</h2>
+                <p class="section-description">Unityを中心に、5つの主要領域が緊密に連携しています。</p>
+                <div class="architecture-grid">
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-vr-cardboard"></i> 3Dキャラクター (VRM)</h3>
+                        <p>多数のVRMからランタイムロードし、瞬き・口パク・表情・体のモーションを同期。音声のゲイン解析でリップシンクを実現します。</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-headset"></i> 音声認識</h3>
+                        <p>Windows標準DictationRecognizerにより、API不要・オフライン対応の常時リッスンモードを構築しました。</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-comments"></i> 言語処理</h3>
+                        <p>LLMからの出力をJSONで受信し、会話方針やコンテキストを厳格に制御。モデルは用途に応じて選択可能です。</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-volume-up"></i> 音声合成</h3>
+                        <p>VOICEVOXローカルAPIで逐次合成し、GPU処理によって応答開始を高速化。自然な会話テンポを支えます。</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-database"></i> 状態・履歴管理</h3>
+                        <p>PlayerPrefsで設定と履歴を永続化。生成したキャラクターをいつでも呼び出し、会話を続けられます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- キャラクター生成 -->
+        <section class="section generation-section">
+            <div class="container generation-container">
+                <div class="generation-intro">
+                    <h2 class="section-title">キャラクター動的生成フロー</h2>
+                    <p>ユーザーが入力した自然文をもとに、AIがキャラクターの人格・外見・声をまとめたJSONを生成し、即座に反映します。異常値はスキーマ検証で排除し、安定した生成体験を提供します。</p>
+                    <ul class="generation-points">
+                        <li>必須フィールド：instruction / name / hair_color_index / eye_color_index / model_index / speaker_id</li>
+                        <li>補正ロジックにより髪色と瞳色のバランスを自動調整</li>
+                        <li>生成結果はUIとPlayerPrefsに統合し、再利用可能に</li>
+                    </ul>
+                </div>
+                <div class="generation-steps">
+                    <div class="step-card">
+                        <span class="step-index">01</span>
+                        <h3>自然文の要望入力</h3>
+                        <p>例：「優しくて頭のいい幼なじみ風の女の子にして」など、自由な指示を受け付けます。</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-index">02</span>
+                        <h3>LLMによるJSON生成</h3>
+                        <p>response_format=json_schemaで定義したスキーマに沿って、人格設定を構造化します。</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-index">03</span>
+                        <h3>キャラクター反映</h3>
+                        <p>モデルのロード、マテリアル調整、VOICEVOX話者設定を自動適用し、すぐに会話を開始できます。</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-index">04</span>
+                        <h3>永続化と再起動</h3>
+                        <p>生成した設定を保存し、アプリ起動時に同じ人格・記憶で会話を継続できるようにします。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container generation-media">
+                <figure class="section-image generation-image">
+                    <img src="images/withyou-character-setup.png" alt="With Youの生成結果プレビュー画面">
+                    <figcaption>生成結果は即座にUIへ反映され、モデル・色・話者設定が自動で整合されます。</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 会話フロー -->
+        <section class="section conversation-section">
+            <div class="container conversation-layout">
+                <div class="conversation-grid">
+                    <div class="conversation-card">
+                        <h3><i class="fas fa-exchange-alt"></i> 割り込み可能な対話構造</h3>
+                        <p>ターン制の制約を取り払い、AIが話している最中にもユーザーが割り込める常時リッスン構造を採用。人間同士の雑談に近いテンポでリアクションが挿入できます。</p>
+                    </div>
+                    <div class="conversation-card">
+                        <h3><i class="fas fa-tachometer-alt"></i> レスポンス最適化</h3>
+                        <p>モデルごとの応答特性を分析し、逐次音声合成やGPU生成でレスポンスを高速化。テンポの良い対話体験を実現します。</p>
+                    </div>
+                </div>
+                <figure class="section-image conversation-image">
+                    <img src="images/withyou-live-conversation.png" alt="With Youのリアルタイム会話画面">
+                    <figcaption>リアルタイム会話画面では、音声入力・LLM応答・VOICEVOX発話がシームレスに同期します。</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 展望 -->
+        <section class="section vision-section">
+            <div class="container vision-grid">
+                <div class="vision-card">
+                    <h3><i class="fas fa-cloud"></i> クラウド連携への拡張</h3>
+                    <p>生成したキャラクター設定をクラウドに保存し、スマートフォンやブラウザからも同じ人格で会話できる「パーソナルAIクラウド」構想を描いています。</p>
+                    <p>どこからでも呼び出せる継続的な人格体験により、「アプリを閉じてもAIが生きている」感覚を目指します。</p>
+                </div>
+                <div class="vision-card">
+                    <h3><i class="fas fa-warehouse"></i> デジタルサイネージへの応用</h3>
+                    <p>商業施設や公共施設での案内AIとして活用し、シーンごとにカスタマイズされたキャラクターが多言語で情報提供する未来を見据えています。</p>
+                    <p>静的サイネージでは実現できなかった、状況に応じた対話型の案内を提供します。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 結論 -->
+        <section class="section closing-section">
+            <div class="container closing-content">
+                <h2 class="section-title">これからも「人とAIの距離」を縮めるために</h2>
+                <p>趣味から始まった本プロジェクトは、多様な技術を横断しながら「人とAIの対話体験」を探求し続けています。限られた資源のなかで得た成果を出発点に、思いついた改善はすぐに実装し、進化を止めません。</p>
+                <p>生成AIの急速な進歩に追いつくためにも、情報を常にアップデートしながら、より豊かな対話と表現を追求していきます。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/icon.png" alt="みゃのさん Logo" class="footer-logo-img">
+                        <span class="footer-company-name">With You by Myano-san</span>
+                    </div>
+                    <p class="footer-copyright">&copy;2025 Sato Myano. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+

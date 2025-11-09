@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/withyou.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>With You - AI 角色对话与生成软件</title>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/icon.png" alt="With You Logo" class="logo-img">
+                <span class="company-name">With You</span>
+            </div>
+            <div class="nav-right">
+                <a href="withyou.html" class="nav-link lang-switch">日本語</a>
+                <a href="withyou_en.html" class="nav-link lang-switch">English</a>
+                <a href="index_zh.html#services" class="nav-link">返回 Creation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 头图 -->
+    <section class="withyou-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">与 AI 角色一起<span>“度过时光”</span>的桌面软件</h1>
+                <p class="hero-subtitle">整合语音识别、LLM、3DCG 与语音合成，带来仿佛角色就在面前的对话体验。</p>
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>实时可打断对话</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>动态角色生成</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-sitemap"></i>
+                        <span>端到端整合</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- 概要 -->
+        <section class="section overview-section">
+            <div class="container overview-grid">
+                <div class="overview-content">
+                    <h2 class="section-title">软件概要</h2>
+                    <p>“With You” 是一款让用户以自然节奏与 AI 角色对话的桌面应用。我们重视“角色就在身边”的沉浸感，将语言处理、3D 模型、语音合成与 UI 紧密联动，而不仅仅是一个 AI 聊天工具。</p>
+                    <p>在最新版中，应用能够根据用户需求即刻生成角色的个性、外观与声音，从单一角色运营进化为“塑造无数人格”的平台。</p>
+                </div>
+                <div class="overview-cards">
+                    <article class="info-card">
+                        <h3><i class="fas fa-road"></i> 开发背景</h3>
+                        <p>为了实现“与 AI 度过时光”的体验，我们设计了一套兼顾响应速度、扩展性与个性表现的通用对话基座。</p>
+                    </article>
+                    <article class="info-card">
+                        <h3><i class="fas fa-layer-group"></i> 核心价值</h3>
+                        <ul>
+                            <li>在高速响应与深度表达之间取得平衡</li>
+                            <li>支持双向互动的可打断式对话</li>
+                            <li>角色的动态生成与持久化</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+            <div class="container overview-media">
+                <figure class="section-image overview-image">
+                    <img src="images/withyou-dashboard.png" alt="With You 仪表盘">
+                    <figcaption>主控面板可以一目了然地查看角色状态与对话历史。</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 主要功能 -->
+        <section class="section features-section">
+            <div class="container">
+                <h2 class="section-title">主要功能</h2>
+                <p class="section-description">这是最新版 “With You” 所提供的体验与技术。</p>
+                <figure class="section-image features-image">
+                    <img src="images/withyou-character-setup.png" alt="With You 角色生成界面">
+                    <figcaption>角色生成界面：通过自然语言输入，自动生成人格与外观设定。</figcaption>
+                </figure>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-microphone-alt"></i>
+                        <h3>语音实时对话</h3>
+                        <p>常时监听，即使 AI 正在说话也能插话，实现自然节奏的寒暄与回应。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>LLM 联动与 JSON 控制</h3>
+                        <p>利用 OpenAI 的 Chat Completions API，输出严格遵循 JSON 架构，让对话数据与设定保持结构化。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-wave-square"></i>
+                        <h3>VOICEVOX 流式合成</h3>
+                        <p>通过本地 VOICEVOX HTTP API 进行逐步合成，最大程度缩短开口延迟，带来高品质语音体验。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-user-edit"></i>
+                        <h3>角色动态生成</h3>
+                        <p>把自然语言指示转换成涵盖口吻、设定、外观与声音的 JSON，并立即作为人格启动。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>外观自定义</h3>
+                        <p>通过材质操作动态修改发色、瞳色与 VRM 模型，并自动调整协调的配色。</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-save"></i>
+                        <h3>持久化与再现</h3>
+                        <p>生成结果会保存到 PlayerPrefs，重启后也能以同一人格继续对话。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 架构 -->
+        <section class="section architecture-section">
+            <div class="container">
+                <h2 class="section-title">架构设计</h2>
+                <p class="section-description">以 Unity 为核心，五大领域紧密协同运作。</p>
+                <div class="architecture-grid">
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-vr-cardboard"></i> 3D 角色（VRM）</h3>
+                        <p>在运行时加载多种 VRM，联动眨眼、口型、表情与肢体动作，并通过音频增益分析实现口型同步。</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-headset"></i> 语音识别</h3>
+                        <p>基于 Windows 自带的 DictationRecognizer，实现无需外部 API 的离线常时监听模式。</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-comments"></i> 语言处理</h3>
+                        <p>以 JSON 接收 LLM 输出，严格控制对话方针与上下文，并按用途选择模型。</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-volume-up"></i> 语音合成</h3>
+                        <p>利用 VOICEVOX 本地 API 逐步合成，通过 GPU 加速缩短响应时间，让对话节奏更自然。</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-database"></i> 状态与记录管理</h3>
+                        <p>使用 PlayerPrefs 保存设定与历史，随时调用已生成的角色并继续对话。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 生成流程 -->
+        <section class="section generation-section">
+            <div class="container generation-container">
+                <div class="generation-intro">
+                    <h2 class="section-title">角色动态生成流程</h2>
+                    <p>用户输入的自然语言会被转换成包含人格、外观与声音的 JSON，并立即应用。通过架构校验排除异常值，提供稳定的生成体验。</p>
+                    <ul class="generation-points">
+                        <li>必填字段：instruction / name / hair_color_index / eye_color_index / model_index / speaker_id</li>
+                        <li>颜色修正逻辑确保发色与瞳色的协调</li>
+                        <li>生成结果整合到 UI 与 PlayerPrefs，方便重复使用</li>
+                    </ul>
+                </div>
+                <div class="generation-steps">
+                    <div class="step-card">
+                        <span class="step-index">01</span>
+                        <h3>输入自然语言需求</h3>
+                        <p>例如：“想要一个温柔又聪明的青梅竹马女孩。” 可以尽情发挥想象。</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-index">02</span>
+                        <h3>LLM 生成 JSON</h3>
+                        <p>依据 response_format=json_schema 定义，结构化输出人格设定。</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-index">03</span>
+                        <h3>应用到角色</h3>
+                        <p>自动加载模型、调整材质并设置 VOICEVOX 说话人，立即开始对话。</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-index">04</span>
+                        <h3>持久化与重启</h3>
+                        <p>保存生成设定，应用重启后也能以相同人格与记忆继续交流。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container generation-media">
+                <figure class="section-image generation-image">
+                    <img src="images/withyou-character-setup.png" alt="With You 生成结果预览">
+                    <figcaption>生成结果会立即反映到 UI 中，自动统一模型、配色与语音设定。</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 对话流程 -->
+        <section class="section conversation-section">
+            <div class="container conversation-layout">
+                <div class="conversation-grid">
+                    <div class="conversation-card">
+                        <h3><i class="fas fa-exchange-alt"></i> 可打断的对话结构</h3>
+                        <p>摆脱僵化的回合制，常时监听架构允许用户在 AI 说话途中插话，插入反应的节奏接近人与人之间的闲聊。</p>
+                    </div>
+                    <div class="conversation-card">
+                        <h3><i class="fas fa-tachometer-alt"></i> 响应优化</h3>
+                        <p>分析不同模型的响应特性，通过流式合成与 GPU 生成加速反馈，让对话更有活力。</p>
+                    </div>
+                </div>
+                <figure class="section-image conversation-image">
+                    <img src="images/withyou-live-conversation.png" alt="With You 实时对话界面">
+                    <figcaption>实时对话界面无缝同步语音输入、LLM 应答与 VOICEVOX 发声。</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 展望 -->
+        <section class="section vision-section">
+            <div class="container vision-grid">
+                <div class="vision-card">
+                    <h3><i class="fas fa-cloud"></i> 向云端扩展</h3>
+                    <p>规划中的“个人 AI 云”将角色设定保存在云端，让用户在手机或浏览器中也能与同一人格对话。</p>
+                    <p>实现“就算关闭应用 AI 依然存在”的连续人格体验，是我们追求的目标。</p>
+                </div>
+                <div class="vision-card">
+                    <h3><i class="fas fa-warehouse"></i> 应用于数字标牌</h3>
+                    <p>我们设想在商业设施和公共场所中，面向场景定制的角色能以多语言提供信息，成为互动型的导览方式。</p>
+                    <p>通过对话而非静态画面，角色可以根据情境给出恰当的引导。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 结语 -->
+        <section class="section closing-section">
+            <div class="container closing-content">
+                <h2 class="section-title">继续拉近人与 AI 的距离</h2>
+                <p>这个始于兴趣的项目跨越多种技术，一直在探索“人与 AI 的对话体验”。即使资源有限，我们也把想到的改进迅速付诸实现，持续前进。</p>
+                <p>为了跟上生成式 AI 的飞跃式发展，我们不断更新知识，追求更丰富的对话与表现。</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/icon.png" alt="With You Logo" class="footer-logo-img">
+                        <span class="footer-company-name">With You by Myano-san</span>
+                    </div>
+                    <p class="footer-copyright">&copy;2025 佐藤妙野. 保留所有权利。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/withyou.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>With You - AI Character Interaction & Generation Software</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/icon.png" alt="With You Logo" class="logo-img">
+                <span class="company-name">With You</span>
+            </div>
+            <div class="nav-right">
+                <a href="withyou.html" class="nav-link lang-switch">日本語</a>
+                <a href="withyou_zh.html" class="nav-link lang-switch">中文</a>
+                <a href="index_en.html#services" class="nav-link">Back to Creation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="withyou-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Desktop software for <span>"spending time"</span> with AI characters</h1>
+                <p class="hero-subtitle">We combine speech recognition, LLMs, 3DCG, and speech synthesis to deliver conversations that feel like the character is right in front of you.</p>
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Real-time interruptible dialogue</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>Dynamic character generation</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-sitemap"></i>
+                        <span>End-to-end integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Overview -->
+        <section class="section overview-section">
+            <div class="container overview-grid">
+                <div class="overview-content">
+                    <h2 class="section-title">Software Overview</h2>
+                    <p>"With You" is a desktop app that lets you chat with AI characters at a natural pace. It puts immersion first so you feel the character is right there with you, tightly integrating language processing, 3D models, speech synthesis, and UI.</p>
+                    <p>In the latest release the app can instantly generate a character's personality, appearance, and voice based on user requests, evolving from a single-character setup into a platform that can spawn countless personas.</p>
+                </div>
+                <div class="overview-cards">
+                    <article class="info-card">
+                        <h3><i class="fas fa-road"></i> Why We Built It</h3>
+                        <p>To move beyond simple "chatting with AI" and create an experience of actually "spending time" together, we designed a general-purpose dialogue foundation balancing responsiveness, extensibility, and personality expression.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3><i class="fas fa-layer-group"></i> Core Values</h3>
+                        <ul>
+                            <li>Balancing fast responses with expressive depth</li>
+                            <li>Bidirectional conversations with interruptible turns</li>
+                            <li>Dynamic generation and persistence of characters</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+            <div class="container overview-media">
+                <figure class="section-image overview-image">
+                    <img src="images/withyou-dashboard.png" alt="With You dashboard">
+                    <figcaption>The home dashboard gives a clear overview of character status and conversation history.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="section features-section">
+            <div class="container">
+                <h2 class="section-title">Key Features</h2>
+                <p class="section-description">Experiences and technologies provided in the latest version of "With You."</p>
+                <figure class="section-image features-image">
+                    <img src="images/withyou-character-setup.png" alt="With You character generation UI">
+                    <figcaption>Character generation screen: natural language input automatically produces personality and appearance settings.</figcaption>
+                </figure>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-microphone-alt"></i>
+                        <h3>Real-time voice conversations</h3>
+                        <p>Always-listening mode lets users interrupt even while the AI is talking, enabling casual back-and-forth and interjections at a natural tempo.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>LLM integration with JSON control</h3>
+                        <p>Built on OpenAI's Chat Completions API. Output strictly follows a JSON schema so conversation data and configurations remain structured.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-wave-square"></i>
+                        <h3>Sequential VOICEVOX synthesis</h3>
+                        <p>Uses the local VOICEVOX HTTP API for streaming synthesis, minimizing latency before speech begins for a high-quality audio experience.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-user-edit"></i>
+                        <h3>Dynamic character generation</h3>
+                        <p>Natural-language prompts are converted into JSON covering tone, settings, appearance, and voice, then launched as a persona right away.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Appearance customization</h3>
+                        <p>Hair color, eye color, and VRM models can be adjusted at runtime through material operations, with automatic color harmony adjustments.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-save"></i>
+                        <h3>Persistence and replay</h3>
+                        <p>Generation results are saved with PlayerPrefs so you can pick up conversations with the same personality after restarting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture -->
+        <section class="section architecture-section">
+            <div class="container">
+                <h2 class="section-title">Architecture</h2>
+                <p class="section-description">Five core domains work closely together with Unity at the center.</p>
+                <div class="architecture-grid">
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-vr-cardboard"></i> 3D Characters (VRM)</h3>
+                        <p>Loads multiple VRM models at runtime, synchronizing blinking, mouth shapes, facial expressions, and body motions. Lip sync is driven by audio gain analysis.</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-headset"></i> Speech Recognition</h3>
+                        <p>Builds on Windows' DictationRecognizer to offer offline-ready, always-listening mode without requiring external APIs.</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-comments"></i> Language Processing</h3>
+                        <p>Receives LLM output in JSON and strictly manages conversation policy and context. Models are chosen according to usage scenarios.</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-volume-up"></i> Speech Synthesis</h3>
+                        <p>Sequential synthesis via the VOICEVOX local API leverages GPU processing to speed up response start times and keep the flow natural.</p>
+                    </div>
+                    <div class="architecture-card">
+                        <h3><i class="fas fa-database"></i> State & History</h3>
+                        <p>Persists settings and history in PlayerPrefs so generated characters can be recalled and conversations resumed anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Generation Flow -->
+        <section class="section generation-section">
+            <div class="container generation-container">
+                <div class="generation-intro">
+                    <h2 class="section-title">Dynamic Character Generation Flow</h2>
+                    <p>Natural-language requests from the user are transformed into JSON that packages personality, appearance, and voice, then applied instantly. Schema validation filters out anomalies to keep generation stable.</p>
+                    <ul class="generation-points">
+                        <li>Required fields: instruction / name / hair_color_index / eye_color_index / model_index / speaker_id</li>
+                        <li>Color correction logic keeps hair and eye color in balance</li>
+                        <li>Results are unified across the UI and PlayerPrefs for easy reuse</li>
+                    </ul>
+                </div>
+                <div class="generation-steps">
+                    <div class="step-card">
+                        <span class="step-index">01</span>
+                        <h3>Enter natural-language requests</h3>
+                        <p>Example: “Make her a kind, smart childhood-friend type.” Free-form instructions are welcome.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-index">02</span>
+                        <h3>LLM generates JSON</h3>
+                        <p>Outputs structured personality settings that follow a response_format=json_schema definition.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-index">03</span>
+                        <h3>Apply to the character</h3>
+                        <p>Loads the model, adjusts materials, and assigns the VOICEVOX speaker automatically so conversations can start immediately.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-index">04</span>
+                        <h3>Persist and relaunch</h3>
+                        <p>Saves the generated settings so the same personality and memories return when the app restarts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container generation-media">
+                <figure class="section-image generation-image">
+                    <img src="images/withyou-character-setup.png" alt="With You generation preview">
+                    <figcaption>Results are reflected instantly in the UI, aligning models, colors, and voice settings automatically.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Conversation Flow -->
+        <section class="section conversation-section">
+            <div class="container conversation-layout">
+                <div class="conversation-grid">
+                    <div class="conversation-card">
+                        <h3><i class="fas fa-exchange-alt"></i> Interruptible dialogue structure</h3>
+                        <p>Breaks free from rigid turn-taking with an always-listening architecture that lets users interrupt mid-sentence. Reactions can be inserted at a pace similar to talking with another person.</p>
+                    </div>
+                    <div class="conversation-card">
+                        <h3><i class="fas fa-tachometer-alt"></i> Response optimization</h3>
+                        <p>Analyzes response characteristics per model and accelerates replies with streaming synthesis and GPU generation, keeping conversations lively.</p>
+                    </div>
+                </div>
+                <figure class="section-image conversation-image">
+                    <img src="images/withyou-live-conversation.png" alt="With You real-time conversation screen">
+                    <figcaption>The real-time screen synchronizes voice input, LLM responses, and VOICEVOX speech seamlessly.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Vision -->
+        <section class="section vision-section">
+            <div class="container vision-grid">
+                <div class="vision-card">
+                    <h3><i class="fas fa-cloud"></i> Expanding to the cloud</h3>
+                    <p>We're planning a "personal AI cloud" where generated character settings live online so you can talk to the same persona from phones or browsers.</p>
+                    <p>The goal is a continuous personality experience where the AI feels alive even when the app is closed.</p>
+                </div>
+                <div class="vision-card">
+                    <h3><i class="fas fa-warehouse"></i> Applying to digital signage</h3>
+                    <p>We imagine commercial and public spaces where tailored characters provide multilingual guidance as an interactive alternative to static signage.</p>
+                    <p>By adapting to the situation, these characters can deliver the right information with a conversation rather than a static display.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing -->
+        <section class="section closing-section">
+            <div class="container closing-content">
+                <h2 class="section-title">Keeping people and AI close</h2>
+                <p>What started as a hobby project now spans multiple technologies in pursuit of better human-AI conversations. Even with limited resources, we iterate fast and never stop evolving.</p>
+                <p>To keep pace with rapidly advancing generative AI, we constantly update our knowledge and chase richer dialogue and expression.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/icon.png" alt="With You Logo" class="footer-logo-img">
+                        <span class="footer-company-name">With You by Myano-san</span>
+                    </div>
+                    <p class="footer-copyright">&copy;2025 Sato Myano. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+

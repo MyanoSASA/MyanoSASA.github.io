@@ -1,17 +1,25 @@
-// Hero background slideshow
 class HeroSlideshow {
-    constructor() {
+    constructor({
+        selector = '.hero',
+        images = null,
+        interval = 5000,
+        backgroundClass = 'hero-bg',
+        parallax = true
+    } = {}) {
         this.currentIndex = 0;
-        this.images = [
+        this.selector = selector;
+        this.heroElement = document.querySelector(selector);
+        this.interval = interval;
+        this.bgClass = backgroundClass;
+        this.parallax = parallax;
+        this.images = Array.isArray(images) && images.length > 0 ? images : [
             'hero_bgs/1.jpg',
             'hero_bgs/2.jpg',
-            'hero_bgs/3.jpg',
-            'hero_bgs/4.jpg'
+            'hero_bgs/3.png',
+            'hero_bgs/4.png'
         ];
-        this.interval = 5000; // 5秒間隔
-        this.heroElement = document.querySelector('.hero');
         this.bgElements = [];
-        
+
         this.init();
     }
     
@@ -32,19 +40,27 @@ class HeroSlideshow {
     }
     
     createBackgroundElements() {
+        const fragment = document.createDocumentFragment();
+
         this.images.forEach((imageSrc, index) => {
             const bgElement = document.createElement('div');
-            bgElement.className = 'hero-bg';
+            bgElement.classList.add(this.bgClass);
             bgElement.style.backgroundImage = `url('${imageSrc}')`;
-            
+
+            if (!this.parallax) {
+                bgElement.style.backgroundAttachment = 'scroll';
+            }
+
             // 最初の画像のみアクティブに
             if (index === 0) {
                 bgElement.classList.add('active');
             }
-            
-            this.heroElement.appendChild(bgElement);
+
+            fragment.appendChild(bgElement);
             this.bgElements.push(bgElement);
         });
+
+        this.heroElement.appendChild(fragment);
     }
     
     showSlide(index) {
@@ -154,6 +170,21 @@ class SmoothScroll {
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize hero slideshow
     new HeroSlideshow();
+
+    // Initialize With You hero slideshow if the section exists
+    if (document.querySelector('.withyou-hero')) {
+        new HeroSlideshow({
+            selector: '.withyou-hero',
+            images: [
+                'images/withyou-dashboard.png',
+                'images/withyou-character-setup.png',
+                'images/withyou-live-conversation.png'
+            ],
+            interval: 6000,
+            backgroundClass: 'withyou-hero-bg',
+            parallax: false
+        });
+    }
     
     // Initialize tab manager
     new TabManager();
